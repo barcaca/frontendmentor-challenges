@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend Mentor - Desafios com Next.js
 
-## Getting Started
+Este repositório é uma coleção de soluções para os desafios do [Frontend Mentor](https://www.frontendmentor.io/) desenvolvidos com **Next.js**, **React**, **TypeScript** , **Tailwind CSS** e **Motion**.
 
-First, run the development server:
+## ✨ Desafios
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Aqui estão os desafios concluídos e seus respectivos links:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **QR Code Component** - [Live Site](https://frontendmentor-libarcaca.vercel.app/1-qr-code)
+2. *(Adicione mais desafios conforme forem sendo concluídos)*
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎨 Screenshots
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Exemplo de um dos desafios:
 
-## Learn More
+![Thumbnail](/public/thumbnail.png)
 
-To learn more about Next.js, take a look at the following resources:
+## 🔗 Links
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Live Site URl](https://frontendmentor-libarcaca.vercel.app)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Tecnologias
 
-## Deploy on Vercel
+Este projeto utiliza as seguintes tecnologias:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Next.js](https://img.shields.io/badge/Next.js-%23000000?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-%2361DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-%233178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-%2306B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Shadcn UI](https://img.shields.io/badge/Shadcn_UI-%23000000?style=for-the-badge&logo=shadcnui&logoColor=white)
+![Biome](https://img.shields.io/badge/Biome-%2360A5FA?style=for-the-badge&logo=biome&logoColor=white)
+![Motion](https://img.shields.io/badge/Motion-fff312?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+TW90aW9uPC90aXRsZT48cGF0aCBkPSJtOS4wNzEgNy43OTItNC43NDcgOC40MTZIBMwzLjcwNi02LjU3MmMuNTc1LTEuMDE4IDIuMDA5LTEuODQ0IDMuMjAzLTEuODQ0em0xMC42MDQgMi4xMDRjMC0xLjE2Mi45NjgtMi4xMDQgMi4xNjItMi4xMDRTMjQgOC43MzQgMjQgOS44OTZDMjQgMTEuMDU4IDIzLjAzMiAxMiAyMS44MzcgMTJzLTIuMTYyLS45NDItMi4xNjItMi4xMDR6TTkuODgxIDcuNzkyaDQuMzI1bC00Ljc0NyA4LjQxNkg1LjEzNXptNS4xMDggMGg0LjMyNGwtMy43MDYgNi41NzJjLS41NzUgMS4wMTgtMi4wMDkgMS44NDQtMy4yMDMgMS44NDRoLTIuMTYyeiIvPjwvc3ZnPg==)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🏆 Conclusão
+
+Este repositório serve como um portfólio dos desafios resolvidos do Frontend Mentor, ajudando a aprimorar habilidades de desenvolvimento front-end e boas práticas de código.
+
+## 📚 Recursos úteis
+
+- [Documentação do **Next.js**](https://nextjs.org/docs)
+- [Documentação do **Tailwind CSS**](https://tailwindcss.com/docs)
+- [Documentação do **TypeScript**](https://www.typescriptlang.org/docs/)
+- [Documentação do **Shadcn UI**](https://ui.shadcn.com/docs)
+- [Documentação do **Motion**](https://motion.dev/docs/react-quick-start)
+
+## 👤 Autor
+
+- **GitHub:** [@barcaca](https://www.github.com/barcaca)
+- **Website:** [libarcaca](https://libarcaca.vercel.app)
+- **Frontend Mentor:** [@barcaca](https://www.frontendmentor.io/profile/barcaca)
+
+---
+
+Sinta-se à vontade para contribuir ou sugerir melhorias! ✨
+
