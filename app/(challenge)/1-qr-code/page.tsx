@@ -18,7 +18,7 @@ const QrCodePage = () => {
           variants={container}
           initial={'hidden'}
           animate={'show'}
-          whileHover={'whileHover'}
+          whileHover={'hover'}
           className="w-full max-w-xs space-y-6 p-4 pb-10"
         >
           <MotionImage
