@@ -1,3 +1,4 @@
+import { poppins } from '@/fonts/font'
 import Link from 'next/link'
 import { Icons } from './icons'
 import { buttonVariants } from './ui/button'
@@ -16,7 +17,9 @@ export function Footer() {
   const year = new Date().getFullYear()
   return (
     <footer className="flex w-full flex-col items-center justify-center gap-4 py-8 md:flex-row md:justify-between">
-      <p className="order-2 font-semibold text-muted-foreground text-sm md:order-1">
+      <p
+        className={`order-2 font-semibold text-muted-foreground text-sm md:order-1 ${poppins.className}`}
+      >
         © {year} Luan, All Rights Reserved
       </p>
       <div className="order-1 inline-flex items-center gap-8 md:order-2">
