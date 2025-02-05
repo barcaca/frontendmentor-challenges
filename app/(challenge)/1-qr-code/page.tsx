@@ -1,14 +1,14 @@
 import { Footer } from '@/components/footer'
-import { CardHeader } from '@/components/ui/card'
-import { outfit } from '@/fonts/font'
-import qrCode from '@/public/1-qr-code/image-qr-code.png'
-import { container, item } from './_animate'
+import { container, item } from '@/components/shared/_animate'
 import {
   MotionCard,
   MotionCardDescription,
   MotionCardTitle,
   MotionImage,
-} from './_components/motion-qr-code'
+} from '@/components/shared/_components/motion-qr-code'
+import { CardHeader } from '@/components/ui/card'
+import { outfit } from '@/fonts/font'
+import qrCode from '@/public/1-qr-code/image-qr-code.png'
 
 export const metadata = {
   title: 'Desafio 1',
@@ -26,7 +26,7 @@ const QrCodePage = () => {
           className="w-full max-w-xs space-y-6 p-4 pb-10"
         >
           <MotionImage
-            variants={item.image}
+            variants={item.scale}
             src={qrCode}
             alt="QR Code"
             width={288}
@@ -35,13 +35,13 @@ const QrCodePage = () => {
           />
           <CardHeader className={`${outfit.className} space-y-4 p-0 text-center`}>
             <MotionCardTitle
-              variants={item.title}
+              variants={item.translateXRight}
               className="font-bold text-[22px] text-slate-900 leading-[1.2] tracking-normal"
             >
               Improve your front-end skills by building projects
             </MotionCardTitle>
             <MotionCardDescription
-              variants={item.description}
+              variants={item.translateXLeft}
               className="text-[15px] text-slate-500 leading-[1.4] tracking-[0.2px]"
             >
               Scan the QR code to visit Frontend Mentor and take your coding skills to the next
