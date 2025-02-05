@@ -10,6 +10,10 @@ import {
   MotionImage,
 } from './_components/motion-qr-code'
 
+export const metadata = {
+  title: 'Desafio 1',
+}
+
 const QrCodePage = () => {
   return (
     <div className="flex min-h-screen flex-col bg-slate-300 p-7">
