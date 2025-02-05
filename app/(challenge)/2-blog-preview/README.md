@@ -1,5 +1,5 @@
-# Frontend Mentor - QR code component
-Esta é uma solução para o [Frontend Mentor - QR code component](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
+# Frontend Mentor - Blog preview card
+Esta é uma solução para o [Frontend Mentor - Blog preview card](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS)
 # Indice
 - 🖼️ [Screenshot](#screenshot)
 - 🔗 [Links](#links)
@@ -9,11 +9,11 @@ Esta é uma solução para o [Frontend Mentor - QR code component](https://www.f
 - 👤 [Author](#author)
 ## 🖼️ Screenshots
 
-![Thumbnail](/assets/1-qr-code/1-thumbnail.png)
+![Thumbnail](/assets/2-blog-preview/2-thumbnail.png)
 
 ## 🔗 Links
 
-- [Live Site URL](https://frontendmentor-libarcaca.vercel.app/1-qr-code)
+- [Live Site URL](https://frontendmentor-libarcaca.vercel.app/2-blog-preview)
 ## 🛠️ Tecnologias
 
 **Front-end:**
@@ -25,8 +25,10 @@ Esta é uma solução para o [Frontend Mentor - QR code component](https://www.f
 ![Shadcn UI](https://img.shields.io/badge/Shadcn_UI-%23000000?style=for-the-badge&logo=shadcnui&logoColor=white)
 ![Biome](https://img.shields.io/badge/Biome-%2360A5FA?style=for-the-badge&logo=biome&logoColor=white)
 ![Motion](https://img.shields.io/badge/Motion-fff312?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+TW90aW9uPC90aXRsZT48cGF0aCBkPSJtOS4wNzEgNy43OTItNC43NDcgOC40MTZIMGwzLjcwNi02LjU3MmMuNTc1LTEuMDE4IDIuMDA5LTEuODQ0IDMuMjAzLTEuODQ0em0xMC42MDQgMi4xMDRjMC0xLjE2Mi45NjgtMi4xMDQgMi4xNjItMi4xMDRTMjQgOC43MzQgMjQgOS44OTZDMjQgMTEuMDU4IDIzLjAzMiAxMiAyMS44MzcgMTJzLTIuMTYyLS45NDItMi4xNjItMi4xMDR6TTkuODgxIDcuNzkyaDQuMzI1bC00Ljc0NyA4LjQxNkg1LjEzNXptNS4xMDggMGg0LjMyNGwtMy43MDYgNi41NzJjLS41NzUgMS4wMTgtMi4wMDkgMS44NDQtMy4yMDMgMS44NDRoLTIuMTYyeiIvPjwvc3ZnPg==)
+
 ## 🏆 Conclusão
-Apesar de simples, esse desafio é um excelente ponto de partida para quem deseja aprimorar a atenção aos detalhes e a fidelidade ao design.
+O desafio Blog Preview Card do Frontend Mentor é uma excelente oportunidade para praticar efeitos visuais, como hover e shadow.
+
 ## 📚 Recursos úteis
 
 - [Documentação do  **Next.js:**](https://nextjs.org/docs)
