@@ -1,4 +1,4 @@
-import { Outfit, Poppins, Raleway } from 'next/font/google'
+import { Figtree, Outfit, Poppins, Raleway } from 'next/font/google'
 
 export const poppins = Poppins({
   display: 'swap',
@@ -18,4 +18,11 @@ export const outfit = Outfit({
   subsets: ['latin'],
   weight: ['200', '300', '400', '500', '600', '700'],
   variable: '--font-outfit',
+})
+
+export const figtree = Figtree({
+  display: 'swap',
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-figtree',
 })

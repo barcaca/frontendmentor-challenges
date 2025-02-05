@@ -1,7 +1,10 @@
 import { Footer } from '@/components/footer'
 import Link from 'next/link'
 
-const links = [{ href: '1-qr-code', label: 'Challenge 1 - QR code component' }]
+const links = [
+  { href: '1-qr-code', label: 'Desafio 1 - QR code component' },
+  { href: '2-blog-preview', label: 'Desafio 2 - Blog preview card' },
+]
 
 export default function Home() {
   return (
