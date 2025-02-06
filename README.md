@@ -7,7 +7,8 @@ Este repositório é uma coleção de soluções para os desafios do [Frontend M
 Aqui estão os desafios concluídos e seus respectivos links:
 
 1. **QR Code Component** - [Live Site](https://frontendmentor-libarcaca.vercel.app/1-qr-code)
-2. *(Adicione mais desafios conforme forem sendo concluídos)*
+2. **Blog Preview Card** - [Live Site](https://frontendmentor-libarcaca.vercel.app/2-blog-preview)
+3. *(Adicione mais desafios conforme forem sendo concluídos)*
 
 ## 🎨 Screenshots
 
