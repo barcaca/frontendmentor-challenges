@@ -4,6 +4,7 @@ import Link from 'next/link'
 const links = [
   { href: '1-qr-code', label: 'Desafio 1 - QR code component' },
   { href: '2-blog-preview', label: 'Desafio 2 - Blog preview card' },
+  { href: '3-social-profile', label: 'Desafio 3 - Social profile' },
 ]
 
 export default function Home() {
