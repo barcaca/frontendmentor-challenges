@@ -1,4 +1,4 @@
-import { Figtree, Inter, Outfit, Poppins, Raleway } from 'next/font/google'
+import { Figtree, Inter, Outfit, Poppins, Raleway, Young_Serif } from 'next/font/google'
 
 export const poppins = Poppins({
   display: 'swap',
@@ -32,4 +32,11 @@ export const inter = Inter({
   subsets: ['latin'],
   weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
   variable: '--font-inter',
+})
+
+export const young = Young_Serif({
+  display: 'swap',
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-young',
 })
