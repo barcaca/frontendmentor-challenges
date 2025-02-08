@@ -13,7 +13,7 @@ Esta é uma solução para o [Frontend Mentor - Recipe Page](https://www.fronten
 
 ## 🔗 Links
 
-- [Live Site URL](https://frontendmentor-libarcaca.vercel.app/3-social-profile)
+- [Live Site URL](https://frontendmentor-libarcaca.vercel.app/4-recipe)
 ## 🛠️ Tecnologias
 
 **Front-end:**
