@@ -9,7 +9,8 @@ Aqui estão os desafios concluídos e seus respectivos links:
 1. **QR Code Component** - [Live Site](https://frontendmentor-libarcaca.vercel.app/1-qr-code)
 2. **Blog Preview Card** - [Live Site](https://frontendmentor-libarcaca.vercel.app/2-blog-preview)
 3. **Social Links Profile** - [Live Site](https://frontendmentor-libarcaca.vercel.app/3-social-profile)
-4. *(Adicione mais desafios conforme forem sendo concluídos)*
+4. **Recipe Page** - [Live Site](https://frontendmentor-libarcaca.vercel.app/4-recipe)
+5. *(Adicionar mais desafios conforme forem sendo concluídos)*
 
 ## 🎨 Screenshots
 
