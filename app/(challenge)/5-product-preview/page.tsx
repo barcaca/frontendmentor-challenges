@@ -15,7 +15,7 @@ const ProductPreview = () => {
             <Image
               src={imageProduct}
               alt="Product"
-              className="aspect-square h-full w-full object-cover"
+              className="aspect-square h-full w-full object-cover md:aspect-auto"
               width={300}
               height={450}
             />
