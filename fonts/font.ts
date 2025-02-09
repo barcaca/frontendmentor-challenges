@@ -1,4 +1,13 @@
-import { Figtree, Inter, Outfit, Poppins, Raleway, Young_Serif } from 'next/font/google'
+import {
+  Figtree,
+  Fraunces,
+  Inter,
+  Montserrat,
+  Outfit,
+  Poppins,
+  Raleway,
+  Young_Serif,
+} from 'next/font/google'
 
 export const poppins = Poppins({
   display: 'swap',
@@ -39,4 +48,18 @@ export const young = Young_Serif({
   subsets: ['latin'],
   weight: '400',
   variable: '--font-young',
+})
+
+export const montserrat = Montserrat({
+  display: 'swap',
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-montserrat',
+})
+
+export const fraunces = Fraunces({
+  display: 'swap',
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '500', '600', '700'],
+  variable: '--font-fraunces',
 })
