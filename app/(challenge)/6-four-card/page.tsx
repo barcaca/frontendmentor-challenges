@@ -11,7 +11,7 @@ import { cn } from '@/lib/utils'
 import * as motion from 'motion/react-client'
 import Image from 'next/image'
 
-export const cardsItems = [
+const cardsItems = [
   {
     title: 'Supervisor',
     description: 'Monitors activity to identify project roadblocks',
