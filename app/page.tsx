@@ -7,6 +7,7 @@ const links = [
   { href: '3-social-profile', label: 'Desafio 3 - Social profile' },
   { href: '4-recipe', label: 'Desafio 4 - Recipe' },
   { href: '5-product-preview', label: 'Desafio 5 - Product Preview Card' },
+  { href: '6-four-card', label: 'Desafio 6 - Four Card Feature' },
 ]
 
 export default function Home() {
