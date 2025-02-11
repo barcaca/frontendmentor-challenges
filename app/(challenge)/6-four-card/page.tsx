@@ -51,7 +51,7 @@ const cardAnimation = {
 
 const FourCardPage = () => {
   return (
-    <div className="flex min-h-screen flex-col space-y-20 bg-[#fafafa] px-8 py-20">
+    <div className="flex min-h-screen flex-col space-y-20 bg-[#fafafa] px-8 py-6 pt-20">
       <main className={`flex flex-1 flex-col items-center justify-center ${poppins.className}`}>
         <motion.div
           variants={containerOpacity}
