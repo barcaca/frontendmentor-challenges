@@ -1,4 +1,5 @@
 import {
+  Barlow_Semi_Condensed,
   Figtree,
   Fraunces,
   Inter,
@@ -64,4 +65,11 @@ const fraunces = Fraunces({
   variable: '--font-fraunces',
 })
 
-export { figtree, fraunces, inter, montserrat, outfit, poppins, raleway, young }
+const barlow = Barlow_Semi_Condensed({
+  display: 'swap',
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-barlow',
+})
+
+export { barlow, figtree, fraunces, inter, montserrat, outfit, poppins, raleway, young }
