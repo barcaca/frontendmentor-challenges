@@ -1,3 +1,4 @@
+import bgPattern from '@/assets/7-testimonials-grid/bg-pattern-quotation.svg'
 import { Footer } from '@/components/footer'
 import { item } from '@/components/shared/_animate'
 import {
@@ -55,7 +56,17 @@ const TestimonialGridPage = () => {
                 variants={cardAnimation}
                 className={`${gridCols[id]} rounded-xl border`}
               >
-                <Card className="w-full space-y-4 border-none bg-inherit px-8 pt-7 pb-8">
+                <Card className="relative w-full space-y-4 border-none bg-inherit px-8 pt-7 pb-8">
+                  {id === 1 && (
+                    <MotionImage
+                      variants={item.opacity}
+                      className="absolute top-0 right-6 sm:right-20 "
+                      src={bgPattern}
+                      alt="bg-pattern"
+                      width={104}
+                      height={102}
+                    />
+                  )}
                   <CardHeader className="flex flex-row items-center gap-4 space-y-0 p-0">
                     <MotionImage
                       variants={item.scale}
@@ -76,7 +87,7 @@ const TestimonialGridPage = () => {
                       </CardDescription>
                     </motion.div>
                   </CardHeader>
-                  <CardContent className={`${textColor} space-y-4 p-0`}>
+                  <CardContent className={`${textColor} relative z-50 space-y-4 p-0`}>
                     <motion.h2 variants={item.translateYUp} className="font-semibold text-xl">
                       {title}
                     </motion.h2>
