@@ -1,25 +1,23 @@
 import { cn } from '@/lib/utils'
+import React from 'react'
 
-interface BentoProps {
-  children: React.ReactNode
-  className?: string
-}
-
-const BentoGrid = ({ children, className }: BentoProps) => {
-  return (
+const BentoGrid = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
+  ({ className, ...props }, ref) => (
     <div
+      ref={ref}
       className={cn(
         'grid grid-flow-row grid-cols-1 gap-4 sm:grid-cols-2 lg:auto-rows-[400px] lg:grid-cols-6',
         className
       )}
-    >
-      {children}
-    </div>
+      {...props}
+    />
   )
-}
+)
 
-const BentoCard = ({ children, className }: BentoProps) => {
-  return <div className={cn('relative flex', className)}>{children}</div>
-}
+const BentoCard = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
+  ({ className, ...props }, ref) => (
+    <div ref={ref} className={cn('relative flex', className)} {...props} />
+  )
+)
 
 export { BentoCard, BentoGrid }
