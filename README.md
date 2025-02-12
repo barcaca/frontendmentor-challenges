@@ -12,7 +12,8 @@ Aqui estão os desafios concluídos e seus respectivos links:
 4. **Recipe Page** - [Live Site](https://frontendmentor-libarcaca.vercel.app/4-recipe)
 5. **Product Preview Card** - [Live Site](https://frontendmentor-libarcaca.vercel.app/5-product-preview)
 6. **Four Card Feature** - [Live Site](https://frontendmentor-libarcaca.vercel.app/6-four-card)
-7. *(Adicionar mais desafios conforme forem sendo concluídos)*
+7. **Testimonials Grid** - [Live Site](https://frontendmentor-libarcaca.vercel.app/7-testimonials-grid)
+8. *(Adicionar mais desafios conforme forem sendo concluídos)*
 
 ## 🎨 Screenshots
 
