@@ -3,6 +3,7 @@ import {
   Figtree,
   Fraunces,
   Inter,
+  Manrope,
   Montserrat,
   Outfit,
   Poppins,
@@ -72,4 +73,11 @@ const barlow = Barlow_Semi_Condensed({
   variable: '--font-barlow',
 })
 
-export { barlow, figtree, fraunces, inter, montserrat, outfit, poppins, raleway, young }
+const manrope = Manrope({
+  display: 'swap',
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '500', '600', '700', '800'],
+  variable: '--font-manrope',
+})
+
+export { barlow, figtree, fraunces, inter, manrope, montserrat, outfit, poppins, raleway, young }
