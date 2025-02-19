@@ -1,6 +1,5 @@
-import { containerOpacity, item } from '@/components/shared/_animate'
+import MotionSlot from '@/components/shared/_components/motion-slot'
 import { outfit, young } from '@/fonts/font'
-import * as motion from 'motion/react-client'
 const nutritionTable = [
   { label: 'Calories', value: '277kcal' },
   { label: 'Carbs', value: '0g' },
@@ -10,37 +9,39 @@ const nutritionTable = [
 
 const Nutrition = () => {
   return (
-    <motion.div
-      variants={containerOpacity}
-      initial={'hidden'}
-      whileInView={'show'}
-      className="space-y-4"
-    >
-      <motion.h2
-        variants={item.translateXRight}
-        className={`font-semibold text-rose-800 ${young.className} text-[28px]`}
-      >
-        Nutrition
-      </motion.h2>
-      <motion.p variants={item.translateXLeft} className="text-stone-600">
-        The table below shows nutritional values per serving without the additional fillings.{' '}
-      </motion.p>
-      <table className={`${outfit.className} w-full`}>
-        <motion.tbody variants={containerOpacity} className="text-stone-600 ">
-          {nutritionTable.map(({ label, value }, i) => (
-            <motion.tr
-              variants={item.translateYUp}
-              // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-              key={i}
-              className="h-10 border-stone-200 border-b last:border-none"
-            >
-              <td className="w-1/2 pl-8">{label}</td>
-              <td className="w-1/2 text-left font-semibold text-rose-800">{value}</td>
-            </motion.tr>
-          ))}
-        </motion.tbody>
-      </table>
-    </motion.div>
+    <MotionSlot asChild staggerConfig={{ staggerChildren: 0.2 }}>
+      <div className="space-y-4">
+        <MotionSlot asChild isNested direction="right">
+          <h2 className={`font-semibold text-rose-800 ${young.className} text-[28px]`}>
+            Nutrition
+          </h2>
+        </MotionSlot>
+        <MotionSlot asChild isNested direction="left">
+          <p className="text-stone-600">
+            The table below shows nutritional values per serving without the additional fillings.{' '}
+          </p>
+        </MotionSlot>
+        <table className={`${outfit.className} w-full`}>
+          <MotionSlot asChild isNested staggerConfig={{ staggerChildren: 0.2 }}>
+            <tbody className="text-stone-600 ">
+              {nutritionTable.map(({ label, value }, i) => (
+                <MotionSlot // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                  key={i}
+                  isNested
+                  direction="up"
+                  asChild
+                >
+                  <tr className="h-10 border-stone-200 border-b last:border-none">
+                    <td className="w-1/2 pl-8">{label}</td>
+                    <td className="w-1/2 text-left font-semibold text-rose-800">{value}</td>
+                  </tr>
+                </MotionSlot>
+              ))}
+            </tbody>
+          </MotionSlot>
+        </table>
+      </div>
+    </MotionSlot>
   )
 }
 

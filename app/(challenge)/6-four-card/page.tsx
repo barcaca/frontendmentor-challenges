@@ -3,12 +3,10 @@ import karmaSvg from '@/assets/6-four-card/icon-karma.svg'
 import supervisorSvg from '@/assets/6-four-card/icon-supervisor.svg'
 import teamSvg from '@/assets/6-four-card/icon-team-builder.svg'
 import { Footer } from '@/components/footer'
-import { container, containerOpacity, item } from '@/components/shared/_animate'
-import { MotionCard } from '@/components/shared/_components/motion-qr-code'
-import { CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import MotionSlot from '@/components/shared/_components/motion-slot'
+import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { poppins } from '@/fonts/font'
 import { cn } from '@/lib/utils'
-import * as motion from 'motion/react-client'
 import Image from 'next/image'
 
 const cardsItems = [
@@ -38,68 +36,58 @@ const cardsItems = [
   },
 ]
 
-const cardAnimation = {
-  hidden: { opacity: 0, scale: 0.75 },
-  show: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      duration: 0.5,
-    },
-  },
+export const metadata = {
+  title: 'Desafio 6',
 }
 
 const FourCardPage = () => {
   return (
     <div className="flex min-h-screen flex-col space-y-20 bg-[#fafafa] px-8 py-6 pt-20">
       <main className={`flex flex-1 flex-col items-center justify-center ${poppins.className}`}>
-        <motion.div
-          variants={containerOpacity}
-          initial={'hidden'}
-          animate={'show'}
+        <MotionSlot
+          staggerConfig={{ staggerChildren: 0.2 }}
           className="w-full max-w-6xl space-y-16"
         >
           <div className="flex w-full flex-col items-center space-y-4 text-center text-[#a3a5ae]">
-            <motion.h1
-              variants={item.translateYDown}
-              className="font-light text-4xl text-[#4c4e61]"
-            >
-              Reliable, efficient delivery <br />{' '}
-              <span className="font-semibold">Powered by Technology</span>
-            </motion.h1>
-            <motion.p
-              variants={item.translateYUp}
-              className="w-full max-w-prose text-[15px] leading-[1.6]"
-            >
-              Our Artificial Intelligence powered tools use millions of project data points to
-              ensure that your project is successful
-            </motion.p>
+            <MotionSlot asChild isNested>
+              <h1 className="font-light text-4xl text-[#4c4e61]">
+                Reliable, efficient delivery <br />{' '}
+                <span className="font-semibold">Powered by Technology</span>
+              </h1>
+            </MotionSlot>
+            <MotionSlot asChild isNested direction="up">
+              <p className="w-full max-w-prose text-[15px] leading-[1.6]">
+                Our Artificial Intelligence powered tools use millions of project data points to
+                ensure that your project is successful
+              </p>
+            </MotionSlot>
           </div>
-          <motion.div
-            variants={container}
+          <MotionSlot
+            isNested
+            staggerConfig={{ staggerChildren: 0.2 }}
             className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] items-center justify-center gap-8"
           >
             {cardsItems.map(({ title, description, icon, style }) => {
               return (
-                <MotionCard
-                  key={title}
-                  variants={cardAnimation}
-                  className={cn('h-full max-h-[250px] space-y-10 border-t-4 p-8', style)}
-                >
-                  <CardHeader className="space-y-2 p-0">
-                    <CardTitle className="font-semibold text-[#4c4e61] text-xl">{title}</CardTitle>
-                    <CardDescription className="text-[#a3a5ae] text-[13px] leading-[1.6]">
-                      {description}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardFooter className="p-0">
-                    <Image className="ml-auto" src={icon} alt="Icon" width={64} height={64} />
-                  </CardFooter>
-                </MotionCard>
+                <MotionSlot asChild isNested scaleEffect initialScale={0.75} key={title}>
+                  <Card className={cn('h-full max-h-[250px] space-y-10 border-t-4 p-8', style)}>
+                    <CardHeader className="space-y-2 p-0">
+                      <CardTitle className="font-semibold text-[#4c4e61] text-xl">
+                        {title}
+                      </CardTitle>
+                      <CardDescription className="text-[#a3a5ae] text-[13px] leading-[1.6]">
+                        {description}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardFooter className="p-0">
+                      <Image className="ml-auto" src={icon} alt="Icon" width={64} height={64} />
+                    </CardFooter>
+                  </Card>
+                </MotionSlot>
               )
             })}
-          </motion.div>
-        </motion.div>
+          </MotionSlot>
+        </MotionSlot>
       </main>
       <Footer />
     </div>
