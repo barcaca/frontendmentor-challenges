@@ -10,6 +10,7 @@ const links = [
   { href: '6-four-card', label: 'Desafio 6 - Four Card Feature' },
   { href: '7-testimonials-grid', label: 'Desafio 7 - Testimonials Grid' },
   { href: '8-article-preview', label: 'Desafio 8 - Article Preview' },
+  { href: '9-newsletter', label: 'Desafio 9 - Newsletter' },
 ]
 
 export default function Home() {
