@@ -8,6 +8,7 @@ import {
   Outfit,
   Poppins,
   Raleway,
+  Roboto,
   Young_Serif,
 } from 'next/font/google'
 
@@ -80,4 +81,23 @@ const manrope = Manrope({
   variable: '--font-manrope',
 })
 
-export { barlow, figtree, fraunces, inter, manrope, montserrat, outfit, poppins, raleway, young }
+const roboto = Roboto({
+  display: 'swap',
+  subsets: ['latin'],
+  weight: ['100', '300', '400', '500', '700', '900'],
+  variable: '--font-roboto',
+})
+
+export {
+  barlow,
+  figtree,
+  fraunces,
+  inter,
+  manrope,
+  montserrat,
+  outfit,
+  poppins,
+  raleway,
+  roboto,
+  young,
+}
