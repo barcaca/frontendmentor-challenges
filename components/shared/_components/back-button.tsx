@@ -7,7 +7,10 @@ const BackButton = () => {
   return (
     <Link
       href="/"
-      className={cn(buttonVariants({ variant: 'outline', size: 'icon' }), 'absolute top-4 left-4')}
+      className={cn(
+        buttonVariants({ variant: 'outline', size: 'icon' }),
+        'fixed top-4 left-4 z-50'
+      )}
     >
       <ArrowLeftCircle />
     </Link>
