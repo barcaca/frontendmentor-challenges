@@ -11,6 +11,7 @@ const links = [
   { href: '7-testimonials-grid', label: 'Desafio 7 - Testimonials Grid' },
   { href: '8-article-preview', label: 'Desafio 8 - Article Preview' },
   { href: '9-newsletter', label: 'Desafio 9 - Newsletter' },
+  { href: '10-time-tracking', label: 'Desafio 10 - Time Tracking' },
 ]
 
 export default function Home() {
