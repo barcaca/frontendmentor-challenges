@@ -1,6 +1,8 @@
+import MotionSlot from '@/components/shared/_components/motion-slot'
 import { Button } from '@/components/ui/button'
 import { Card, CardHeader, CardTitle } from '@/components/ui/card'
 import { EllipsisIcon } from 'lucide-react'
+import { AnimatePresence } from 'motion/react'
 import Image from 'next/image'
 import type { TrackedActivityResponse } from '../_types/type'
 
@@ -30,14 +32,18 @@ const CardActivity = ({ item, type }: CardActivityProps) => {
             <EllipsisIcon />
           </Button>
         </div>
-        <div className="flex items-center justify-between gap-2 lg:flex-col lg:items-start">
-          <span className="font-medium text-[32px] text-white leading-none lg:text-[54px]">
-            {item.timeframes[type].current}hrs
-          </span>
-          <span className="text-[#bdc1ff] text-sm">
-            Last {type} {item.timeframes[type].previous}hrs
-          </span>
-        </div>
+        <AnimatePresence key={type} mode="wait">
+          <MotionSlot key={'current'} asChild direction="right">
+            <div className="flex items-center justify-between gap-2 lg:flex-col lg:items-start">
+              <span className="font-medium text-[32px] text-white leading-none lg:text-[54px]">
+                {item.timeframes[type].current}hrs
+              </span>
+              <span className="text-[#bdc1ff] text-sm">
+                Last {type} {item.timeframes[type].previous}hrs
+              </span>
+            </div>
+          </MotionSlot>
+        </AnimatePresence>
       </div>
     </Card>
   )
