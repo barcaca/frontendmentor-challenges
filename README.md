@@ -15,7 +15,8 @@ Aqui estão os desafios concluídos e seus respectivos links:
 7. **Testimonials Grid** - [Live Site](https://frontendmentor-libarcaca.vercel.app/7-testimonials-grid)
 8. **Article Preview** - [Live Site](https://frontendmentor-libarcaca.vercel.app/8-article-preview)
 9. **Newsletter Signup Form** - [Live Site](https://frontendmentor-libarcaca.vercel.app/9-newsletter)
-10. *(Adicionar mais desafios conforme forem sendo concluídos)*
+10. **Time Tracking Dashboard** - [Live Site](https://frontendmentor-libarcaca.vercel.app/10-time-tracking)
+11. *(Adicionar mais desafios conforme forem sendo concluídos)*
 
 ## 🎨 Screenshots
 
