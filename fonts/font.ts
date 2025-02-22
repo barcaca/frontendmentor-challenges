@@ -9,6 +9,7 @@ import {
   Poppins,
   Raleway,
   Roboto,
+  Rubik,
   Young_Serif,
 } from 'next/font/google'
 
@@ -88,6 +89,13 @@ const roboto = Roboto({
   variable: '--font-roboto',
 })
 
+const rubik = Rubik({
+  display: 'swap',
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-rubik',
+})
+
 export {
   barlow,
   figtree,
@@ -99,5 +107,6 @@ export {
   poppins,
   raleway,
   roboto,
+  rubik,
   young,
 }
