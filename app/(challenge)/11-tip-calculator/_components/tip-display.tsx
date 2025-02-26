@@ -1,5 +1,7 @@
+import MotionSlot from '@/components/shared/_components/motion-slot'
 import { Button } from '@/components/ui/button'
 import { formatCurrency } from '@/lib/utils'
+import * as motion from 'motion/react-client'
 
 interface TipDisplayProps {
   total: number
@@ -9,7 +11,10 @@ interface TipDisplayProps {
 
 const TipDisplay = ({ total, tipAmount, onReset }: TipDisplayProps) => {
   return (
-    <div className="flex flex-col gap-6 rounded-2xl bg-[#00494d] p-6 lg:justify-between lg:p-10">
+    <MotionSlot
+      isNested
+      className="flex flex-col gap-6 rounded-2xl bg-[#00494d] p-6 lg:justify-between lg:p-10"
+    >
       <div className="space-y-6">
         <div className="flex items-center justify-between ">
           <p className="flex flex-col font-semibold text-[#5e7a7d]">
@@ -34,10 +39,11 @@ const TipDisplay = ({ total, tipAmount, onReset }: TipDisplayProps) => {
         type="button"
         onClick={onReset}
         className="h-12 w-full bg-[#26c0ab] font-semibold text-[#00494d] text-xl uppercase hover:bg-[#9fe8df]"
+        asChild
       >
-        Reset
+        <motion.button whileTap={{ y: 1 }}>Reset</motion.button>
       </Button>
-    </div>
+    </MotionSlot>
   )
 }
 
