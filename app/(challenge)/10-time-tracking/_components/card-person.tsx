@@ -26,7 +26,7 @@ const CardPerson = () => {
   return (
     <BentoCard className="min-h-[204px] sm:col-span-2 lg:col-span-1 lg:row-span-2">
       <Card className="relative w-full border-none">
-        <CardHeader className="absolute z-10 flex h-3/4 w-full rounded-xl bg-[#7536d3]">
+        <CardHeader className="absolute z-10 flex h-3/4 w-full rounded-xl bg-[#4636d3]">
           <MotionSlot
             isNested
             className="flex h-full w-full flex-row items-center gap-8 rounded-xl lg:flex-col lg:items-start lg:justify-center"
