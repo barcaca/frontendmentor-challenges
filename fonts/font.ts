@@ -10,6 +10,7 @@ import {
   Raleway,
   Roboto,
   Rubik,
+  Space_Mono,
   Young_Serif,
 } from 'next/font/google'
 
@@ -96,6 +97,13 @@ const rubik = Rubik({
   variable: '--font-rubik',
 })
 
+const spacemono = Space_Mono({
+  display: 'swap',
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-spacemono',
+})
+
 export {
   barlow,
   figtree,
@@ -108,5 +116,6 @@ export {
   raleway,
   roboto,
   rubik,
+  spacemono,
   young,
 }

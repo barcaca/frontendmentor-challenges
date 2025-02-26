@@ -12,6 +12,7 @@ const links = [
   { href: '8-article-preview', label: 'Desafio 8 - Article Preview' },
   { href: '9-newsletter', label: 'Desafio 9 - Newsletter' },
   { href: '10-time-tracking', label: 'Desafio 10 - Time Tracking' },
+  { href: '11-tip-calculator', label: 'Desafio 11 - Tip Calculator' },
 ]
 
 export default function Home() {
