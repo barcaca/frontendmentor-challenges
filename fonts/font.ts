@@ -6,6 +6,7 @@ import {
   Manrope,
   Montserrat,
   Outfit,
+  Overpass,
   Poppins,
   Raleway,
   Roboto,
@@ -104,6 +105,13 @@ const spacemono = Space_Mono({
   variable: '--font-spacemono',
 })
 
+const overpass = Overpass({
+  display: 'swap',
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-overpass',
+})
+
 export {
   barlow,
   figtree,
@@ -112,6 +120,7 @@ export {
   manrope,
   montserrat,
   outfit,
+  overpass,
   poppins,
   raleway,
   roboto,
