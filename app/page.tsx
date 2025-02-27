@@ -13,6 +13,7 @@ const links = [
   { href: '9-newsletter', label: 'Desafio 9 - Newsletter' },
   { href: '10-time-tracking', label: 'Desafio 10 - Time Tracking' },
   { href: '11-tip-calculator', label: 'Desafio 11 - Tip Calculator' },
+  { href: '12-rating', label: 'Desafio 12 - Rating' },
 ]
 
 export default function Home() {
