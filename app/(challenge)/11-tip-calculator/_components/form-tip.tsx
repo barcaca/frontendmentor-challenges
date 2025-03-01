@@ -94,20 +94,15 @@ const FormTip = () => {
   const numberOfPeopleWatch = form.watch('numberOfPeople')
 
   useEffect(() => {
-    const calculatorTip = () => {
-      const tipPercentage = Number.parseInt(tipWatch, 10)
-      const total = (billWatch * tipPercentage) / 100
-      const tipAmount = total / numberOfPeopleWatch
-      if (!numberOfPeopleWatch) {
-        setTipAmount(0)
-        setTotal(0)
-      } else {
-        setTipAmount(tipAmount)
-        setTotal(total)
-      }
+    const calculateTip = () => {
+      const tipPercent = Number.parseInt(tipWatch, 10)
+      const tipAmountPerPerson = (billWatch * (tipPercent / 100)) / numberOfPeopleWatch
+      const totalPersonAmount = billWatch / numberOfPeopleWatch + tipAmountPerPerson
+      setTipAmount(tipAmountPerPerson)
+      setTotal(totalPersonAmount)
     }
 
-    calculatorTip()
+    calculateTip()
   }, [tipWatch, billWatch, numberOfPeopleWatch])
 
   return (

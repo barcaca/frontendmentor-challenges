@@ -22,7 +22,7 @@ const TipDisplay = ({ total, tipAmount, onReset }: TipDisplayProps) => {
             <span>/ person</span>
           </p>
           <span className="font-semibold text-[#26c0ab] text-[32px] lg:text-5xl">
-            {!formatCurrency(tipAmount) ? '0.00' : formatCurrency(tipAmount)}
+            ${!formatCurrency(tipAmount) ? '0.00' : formatCurrency(tipAmount)}
           </span>
         </div>
         <div className="flex items-center justify-between ">
@@ -31,7 +31,7 @@ const TipDisplay = ({ total, tipAmount, onReset }: TipDisplayProps) => {
             <span>/ person</span>
           </p>
           <span className="font-semibold text-[#26c0ab] text-[32px] lg:text-5xl">
-            {!formatCurrency(total) ? '0.00' : formatCurrency(total)}
+            ${!formatCurrency(total) ? '0.00' : formatCurrency(total)}
           </span>
         </div>
       </div>
