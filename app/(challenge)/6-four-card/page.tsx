@@ -9,6 +9,10 @@ import { poppins } from '@/fonts/font'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 
+export const metadata = {
+  title: 'Desafio 6',
+}
+
 const cardsItems = [
   {
     title: 'Supervisor',
@@ -35,10 +39,6 @@ const cardsItems = [
     style: 'border-t-[#549ef2] lg:row-span-2 lg:self-center lg:order-3',
   },
 ]
-
-export const metadata = {
-  title: 'Desafio 6',
-}
 
 const FourCardPage = () => {
   return (
