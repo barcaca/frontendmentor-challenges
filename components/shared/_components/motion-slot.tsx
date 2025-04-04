@@ -19,7 +19,6 @@ interface MotionSlotProps extends MotionProps {
   offset?: number
   durationIn?: number
   durationOut?: number
-  blurIntensity?: string
   scaleEffect?: boolean
   initialScale?: number
 
@@ -53,7 +52,6 @@ const MotionSlot = ({
   offset = 24,
   durationIn = 0.4,
   durationOut = 0.3,
-  blurIntensity = '6px',
   scaleEffect = false,
   initialScale = 1,
   // Stagger configuration
@@ -74,7 +72,6 @@ const MotionSlot = ({
           direction === 'right' || direction === 'down' ? -offset : offset,
       }),
       ...(scaleEffect && { scale: initialScale }),
-      filter: `blur(${blurIntensity})`,
     })
     .setAnimate(
       {
@@ -83,7 +80,6 @@ const MotionSlot = ({
           [direction === 'left' || direction === 'right' ? 'x' : 'y']: 0,
         }),
         ...(scaleEffect && { scale: 1 }),
-        filter: 'blur(0)',
       },
       {
         duration: durationIn,
